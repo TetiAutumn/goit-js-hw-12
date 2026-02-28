@@ -19,14 +19,31 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
   margin: 0;
 }
 
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.additional-button {
+  display: block;
+  border:none;
+  color:#fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: #4e75ff;
 }
